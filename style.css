@@ -24,7 +24,7 @@ p {
 .content {
   width: 60%;
   max-width: 800px;
-  min-width: 400px;
+  min-width: 200px;
   margin: 0 auto;
 }
 
@@ -72,21 +72,25 @@ p {
   .row {
     flex-direction: column;
     gap: 30px;
-  }
-
-  .column {
-    flex: none;
     width: 100%;
   }
 
+  .column {
+    flex: none !important;
+    width: 100% !important;
+  }
+
   .profile-photo {
-    position: relative;
+    position: relative !important;
     width: 100%;
     height: 60%;
     object-fit: cover;
     object-position: center;
   }
   .content {
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 }
